@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constLayoutParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgEarth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/earth" />
+
+    <ImageView
+        android:id="@+id/imgMegaman"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="-12dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgEarth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/frame_idle_1" />
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Spacetime Runner"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Run 'till the time ends"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Start"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDesc" />
+
+    <TextView
+        android:id="@+id/lblTimeLeft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgEarth"
+        app:layout_constraintEnd_toEndOf="@+id/imgEarth"
+        app:layout_constraintStart_toStartOf="@+id/imgEarth"
+        app:layout_constraintTop_toTopOf="@+id/imgEarth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
