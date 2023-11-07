@@ -11,7 +11,7 @@ Prepare to experience a whole different level of timer.
 - Interactive animation
 
 ## Preview
-![Demo](https://raw.githubusercontent.com/gavrielsatrio/Spacetime-Runner-Timer/main/demo/demo.gif)
+![Demo](https://raw.githubusercontent.com/gavrielsatrio/Spacetime-Runner-Timer/main/demo/demo-smaller.gif)
 
 ## Support
 You can support me by hitting that star button, and follow me for more interesting things. Cya! 👋
